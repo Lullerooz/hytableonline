@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The HyTables - Knights of the HyTables</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>The HyTables</h1>
+                <span class="slogan">Knights of the HyTables</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#ranks">Ranks</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#rpg">RPG System</a></li>
+                <li><a href="#shops">Shops</a></li>
+                <li><a href="#commands">Commands</a></li>
+                <li><a href="#join" class="btn-primary">Join Server</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="logo-container">
+                    <img src="assets/logo.png" alt="The HyTables Logo" class="hero-logo">
+                </div>
+                <h1 class="hero-title">The HyTables</h1>
+                <p class="hero-subtitle">Knights of the HyTables</p>
+                <p class="hero-description">Embark on an epic medieval adventure in the world of HyTale. Join our community of knights, nobles, and legends!</p>
+                <div class="hero-buttons">
+                    <a href="https://discord.hytable.online" target="_blank" class="btn btn-discord">Join Discord</a>
+                    <a href="https://store.hytable.online" target="_blank" class="btn btn-store">Visit Store</a>
+                    <a href="#join" class="btn btn-join">Join Server</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Server Info Section -->
+    <section id="info" class="info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">🎮</div>
+                    <h3>Survival & Adventure</h3>
+                    <p>Explore vast worlds, build your kingdom, and survive in a medieval fantasy setting.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">⚔️</div>
+                    <h3>Rank Progression</h3>
+                    <p>Advance through ranks from Peasant to Legend, each with unique perks and kits.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🏪</div>
+                    <h3>Economy & Shops</h3>
+                    <p>Trade with NPCs, participate in auctions, and manage your economy with Merits.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">👥</div>
+                    <h3>Active Community</h3>
+                    <p>Join a friendly community of players and participate in events and activities.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">⚔️</div>
+                    <h3>RPG Progression</h3>
+                    <p>Level up through combat, allocate stat points, and customize your character with 8 different attributes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ranks Section -->
+    <section id="ranks" class="ranks-section">
+        <div class="container">
+            <h2 class="section-title">Server Ranks</h2>
+            <p class="section-subtitle">Progress through the ranks and unlock new abilities, kits, and homes</p>
+            
+            <div class="ranks-container">
+                <!-- Player Progression Ranks -->
+                <div class="rank-category">
+                    <h3 class="category-title">Player Progression</h3>
+                    <div class="ranks-grid">
+                        <div class="rank-card">
+                            <div class="rank-icon">👤</div>
+                            <h4>Peasant</h4>
+                            <p class="rank-tier">Default / First-time Join</p>
+                            <ul class="rank-perks">
+                                <li>1 Home</li>
+                                <li>Peasant Kit (15 min cooldown)</li>
+                                <li>Crude tier gear</li>
+                                <li>Starting rank for all new players</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card">
+                            <div class="rank-icon">🏘️</div>
+                            <h4>Townsfolk</h4>
+                            <p class="rank-tier">Early Progression / Learning Stage</p>
+                            <ul class="rank-perks">
+                                <li>2 Homes</li>
+                                <li>Townsfolk Kit (12 hr cooldown)</li>
+                                <li>Copper tier gear</li>
+                                <li>Perfect for players learning the server</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card">
+                            <div class="rank-icon">⚒️</div>
+                            <h4>Guildsman</h4>
+                            <p class="rank-tier">Established, Respected Player</p>
+                            <ul class="rank-perks">
+                                <li>3 Homes</li>
+                                <li>Guildsman Kit (8 hr cooldown)</li>
+                                <li>Iron tier gear + Shield</li>
+                                <li>For active community members</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card">
+                            <div class="rank-icon">🛡️</div>
+                            <h4>Vassal</h4>
+                            <p class="rank-tier">High-Skill or Achievement-Based</p>
+                            <ul class="rank-perks">
+                                <li>4 Homes</li>
+                                <li>Vassal Kit (6 hr cooldown)</li>
+                                <li>Cobalt tier gear + Bow</li>
+                                <li>Earned through skill and dedication</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card">
+                            <div class="rank-icon">👑</div>
+                            <h4>Noble</h4>
+                            <p class="rank-tier">Elite Player Tier</p>
+                            <ul class="rank-perks">
+                                <li>5 Homes</li>
+                                <li>Noble Kit (4 hr cooldown)</li>
+                                <li>Adamantite tier gear + Trueshot Arrows</li>
+                                <li>Top-tier player recognition</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card rank-legend">
+                            <div class="rank-icon">⭐</div>
+                            <h4>Legend of the Table</h4>
+                            <p class="rank-tier">Prestige / Long-term Veteran</p>
+                            <ul class="rank-perks">
+                                <li>6 Homes</li>
+                                <li>Legend Kit (24 hr cooldown)</li>
+                                <li>Mithril tier gear + Deadeye Arrows</li>
+                                <li>Ultimate prestige rank</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Donator Ranks -->
+                <div class="rank-category">
+                    <h3 class="category-title">Donator Ranks</h3>
+                    <div class="ranks-grid">
+                        <div class="rank-card rank-donator">
+                            <div class="rank-icon">🛡️</div>
+                            <h4>Squire</h4>
+                            <p class="rank-tier">Donator Tier 1</p>
+                            <ul class="rank-perks">
+                                <li>8 Homes</li>
+                                <li>Special donator perks</li>
+                                <li>Support the server</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card rank-donator">
+                            <div class="rank-icon">⚔️</div>
+                            <h4>Knight</h4>
+                            <p class="rank-tier">Donator Tier 2</p>
+                            <ul class="rank-perks">
+                                <li>10 Homes</li>
+                                <li>Enhanced donator perks</li>
+                                <li>Priority support</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card rank-donator">
+                            <div class="rank-icon">🎖️</div>
+                            <h4>Knight-Sergeant</h4>
+                            <p class="rank-tier">Donator Tier 3</p>
+                            <ul class="rank-perks">
+                                <li>12 Homes</li>
+                                <li>Premium donator perks</li>
+                                <li>Exclusive benefits</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card rank-donator">
+                            <div class="rank-icon">🏴</div>
+                            <h4>Banneret</h4>
+                            <p class="rank-tier">Donator Tier 4</p>
+                            <ul class="rank-perks">
+                                <li>14 Homes</li>
+                                <li>Exclusive donator perks</li>
+                                <li>Special recognition</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card rank-donator">
+                            <div class="rank-icon">🎯</div>
+                            <h4>Commandant</h4>
+                            <p class="rank-tier">Donator Tier 5</p>
+                            <ul class="rank-perks">
+                                <li>16 Homes</li>
+                                <li>Elite donator perks</li>
+                                <li>Maximum benefits</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card rank-donator">
+                            <div class="rank-icon">🌟</div>
+                            <h4>Grandmaster</h4>
+                            <p class="rank-tier">Donator Tier 6</p>
+                            <ul class="rank-perks">
+                                <li>18 Homes</li>
+                                <li>Master donator perks</li>
+                                <li>Ultimate supporter status</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card rank-donator rank-royal">
+                            <div class="rank-icon">👑</div>
+                            <h4>Royal Benefactor</h4>
+                            <p class="rank-tier">Donator Tier 7</p>
+                            <ul class="rank-perks">
+                                <li>20 Homes</li>
+                                <li>All donator perks unlocked</li>
+                                <li>Royal recognition</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Creator Tags -->
+                <div class="rank-category">
+                    <h3 class="category-title">Primary Creator Tags</h3>
+                    <div class="ranks-grid">
+                        <div class="rank-card rank-creator">
+                            <div class="rank-icon">🎵</div>
+                            <h4>Bard</h4>
+                            <p class="rank-tier">Entry-Level Creator</p>
+                            <ul class="rank-perks">
+                                <li>Clips, shorts, TikTok content</li>
+                                <li>Special creator recognition</li>
+                                <li>Content creator perks</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card rank-creator">
+                            <div class="rank-icon">📜</div>
+                            <h4>Chronicler</h4>
+                            <p class="rank-tier">Event & History Recorder</p>
+                            <ul class="rank-perks">
+                                <li>Records events and lore</li>
+                                <li>Server history documentation</li>
+                                <li>Special documentation access</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card rank-creator">
+                            <div class="rank-icon">🎭</div>
+                            <h4>Minstrel</h4>
+                            <p class="rank-tier">Entertainer / Streamer</p>
+                            <ul class="rank-perks">
+                                <li>Streaming and entertainment</li>
+                                <li>Audience engagement features</li>
+                                <li>Streamer support tools</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card rank-creator">
+                            <div class="rank-icon">📢</div>
+                            <h4>Herald</h4>
+                            <p class="rank-tier">News & Announcements</p>
+                            <ul class="rank-perks">
+                                <li>News and promotional content</li>
+                                <li>Announcement permissions</li>
+                                <li>Community communication tools</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card rank-creator">
+                            <div class="rank-icon">📚</div>
+                            <h4>Lorekeeper</h4>
+                            <p class="rank-tier">Deep Lore & Documentaries</p>
+                            <ul class="rank-perks">
+                                <li>Deep lore content creation</li>
+                                <li>Long-form documentaries</li>
+                                <li>Lore documentation access</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entry & Mid-Level Staff -->
+                <div class="rank-category">
+                    <h3 class="category-title">Entry & Mid-Level Staff</h3>
+                    <div class="ranks-grid">
+                        <div class="rank-card rank-staff">
+                            <div class="rank-icon">🛡️</div>
+                            <h4>Warden</h4>
+                            <p class="rank-tier">Helper / Trial Mod</p>
+                            <ul class="rank-perks">
+                                <li>Basic moderation tools</li>
+                                <li>Player assistance</li>
+                                <li>Trial period position</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card rank-staff">
+                            <div class="rank-icon">⚔️</div>
+                            <h4>Sentinel</h4>
+                            <p class="rank-tier">Full Moderator</p>
+                            <ul class="rank-perks">
+                                <li>Full moderation powers</li>
+                                <li>Server rule enforcement</li>
+                                <li>Community management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Administrative Tier -->
+                <div class="rank-category">
+                    <h3 class="category-title">Administrative Tier</h3>
+                    <div class="ranks-grid">
+                        <div class="rank-card rank-admin">
+                            <div class="rank-icon">👑</div>
+                            <h4>Steward</h4>
+                            <p class="rank-tier">Server Operations Manager</p>
+                            <ul class="rank-perks">
+                                <li>Economy management</li>
+                                <li>Event coordination</li>
+                                <li>Server operations oversight</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card rank-admin">
+                            <div class="rank-icon">⚖️</div>
+                            <h4>Magistrate</h4>
+                            <p class="rank-tier">High-Authority Admin</p>
+                            <ul class="rank-perks">
+                                <li>High-level administrative powers</li>
+                                <li>Server policy decisions</li>
+                                <li>Full administrative access</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Roles -->
+                <div class="rank-category">
+                    <h3 class="category-title">Technical Roles</h3>
+                    <div class="ranks-grid">
+                        <div class="rank-card rank-tech">
+                            <div class="rank-icon">🔧</div>
+                            <h4>Artificer</h4>
+                            <p class="rank-tier">Developer / Systems Engineer</p>
+                            <ul class="rank-perks">
+                                <li>Plugin development</li>
+                                <li>System maintenance</li>
+                                <li>Technical support</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card rank-tech">
+                            <div class="rank-icon">🏗️</div>
+                            <h4>Architect</h4>
+                            <p class="rank-tier">Lead Developer / Core Systems</p>
+                            <ul class="rank-perks">
+                                <li>Core system development</li>
+                                <li>Lead technical decisions</li>
+                                <li>Full system access</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ownership / Governance -->
+                <div class="rank-category">
+                    <h3 class="category-title">Ownership / Governance</h3>
+                    <div class="ranks-grid">
+                        <div class="rank-card rank-owner">
+                            <div class="rank-icon">👑</div>
+                            <h4>Lord of the Table</h4>
+                            <p class="rank-tier">[Lord] Owner</p>
+                            <ul class="rank-perks">
+                                <li>Server ownership</li>
+                                <li>Ultimate decision authority</li>
+                                <li>Complete server control</li>
+                            </ul>
+                        </div>
+                        <div class="rank-card rank-owner">
+                            <div class="rank-icon">⚔️</div>
+                            <h4>The Council</h4>
+                            <p class="rank-tier">Collective Leadership Group</p>
+                            <ul class="rank-perks">
+                                <li>Collective governance</li>
+                                <li>Strategic decision making</li>
+                                <li>Leadership responsibilities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title">Server Features</h2>
+            <p class="section-subtitle">Discover what makes The HyTables unique</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏪</div>
+                    <h3>NPC Shops</h3>
+                    <p>Visit specialized shops including Armorer, Blacksmith, Chef, Farming, Furniture, General, Herbalist, Leatherworker, Weaponsmith, and Woodworker shops.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Economy System</h3>
+                    <p>Trade with Merits currency, participate in auctions, and manage your wealth through jobs and trading. Buy and sell items at competitive prices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏦</div>
+                    <h3>Bank System</h3>
+                    <p>Store your Merits safely in the bank. Manage your finances and secure your wealth for future investments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>Kits & Crates</h3>
+                    <p>Claim rank-based kits with cooldowns and discover rare items through the crate system. Unlock powerful gear as you progress.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Homes & Warps</h3>
+                    <p>Set multiple homes based on your rank and use warps to travel quickly across the server. Access key locations instantly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💼</div>
+                    <h3>Jobs System</h3>
+                    <p>Work various jobs to earn Merits and progress through different job tiers. Build your career and increase your income.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎲</div>
+                    <h3>Random Teleport</h3>
+                    <p>Explore the world with random teleportation to discover new areas and adventures. Find hidden treasures and locations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Custom Chat</h3>
+                    <p>Rank-based chat formatting with colors and prefixes for each player rank. Express yourself with custom chat styles.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Spawn Protection</h3>
+                    <p>Safe spawn area with 500 block radius protection and invulnerability. Build and trade in complete safety.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚔️</div>
+                    <h3>RPG Leveling System</h3>
+                    <p>Gain experience from defeating mobs, level up to 100, and allocate stat points to customize your character. Build your perfect playstyle!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RPG System Section -->
+    <section id="rpg" class="rpg-section">
+        <div class="container">
+            <h2 class="section-title">RPG Leveling & Stats System</h2>
+            <p class="section-subtitle">Progress through levels, gain experience, and customize your character with stat allocation</p>
+            
+            <div class="rpg-overview">
+                <div class="rpg-card rpg-main">
+                    <div class="rpg-icon">⚔️</div>
+                    <h3>Experience & Leveling</h3>
+                    <p>Gain experience points by defeating mobs! The stronger the mob, the more XP you earn. Progress through levels (up to level 100) and watch your character grow stronger with each level up.</p>
+                    <ul class="rpg-features">
+                        <li>✓ Gain XP from killing mobs based on their health</li>
+                        <li>✓ Level up by accumulating experience points</li>
+                        <li>✓ Earn stat points on each level up</li>
+                        <li>✓ Real-time HUD showing your level and XP progress</li>
+                    </ul>
+                </div>
+                
+                <div class="rpg-card rpg-main">
+                    <div class="rpg-icon">📊</div>
+                    <h3>Stat Allocation</h3>
+                    <p>Customize your character by allocating stat points across 8 different attributes. Build your character to match your playstyle - whether you're a tank, mage, or agile fighter!</p>
+                    <ul class="rpg-features">
+                        <li>✓ 8 different stats to choose from</li>
+                        <li>✓ Permanent stat modifiers</li>
+                        <li>✓ Easy-to-use GUI for stat management</li>
+                        <li>✓ 5 stat points per level (495 total at max level)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="stats-grid">
+                <h3 class="stats-title">Available Stats</h3>
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-icon">❤️</div>
+                        <h4>Health</h4>
+                        <p>Increases your maximum health pool</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⚡</div>
+                        <h4>Stamina</h4>
+                        <p>Increases your maximum stamina</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🔮</div>
+                        <h4>Mana</h4>
+                        <p>Increases your maximum mana</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🏹</div>
+                        <h4>Ammo</h4>
+                        <p>Increases your maximum ammo capacity</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💨</div>
+                        <h4>Oxygen</h4>
+                        <p>Increases maximum oxygen for underwater activities</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⏱️</div>
+                        <h4>Stamina Regen</h4>
+                        <p>Reduces stamina regeneration delay</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">✨</div>
+                        <h4>Magic Charges</h4>
+                        <p>Increases magic charge capacity</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🛡️</div>
+                        <h4>Immunity</h4>
+                        <p>Increases immunity duration</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rpg-commands">
+                <h3 class="rpg-commands-title">RPG Commands</h3>
+                <div class="rpg-commands-grid">
+                    <div class="rpg-command-card">
+                        <code>/lvl gui</code>
+                        <p>Opens the stats management GUI where you can view your level, experience, and allocate stat points to customize your character.</p>
+                    </div>
+                    <div class="rpg-command-card">
+                        <code>/lvl info</code>
+                        <p>Displays comprehensive information about all available stats, stat point values, and available commands.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rpg-progression">
+                <h3 class="rpg-progression-title">Progression System</h3>
+                <div class="progression-info">
+                    <div class="progression-card">
+                        <h4>📈 Experience Gain</h4>
+                        <p>XP is calculated based on mob health. Stronger mobs give more experience, encouraging you to take on greater challenges as you level up.</p>
+                    </div>
+                    <div class="progression-card">
+                        <h4>🎯 Level Requirements</h4>
+                        <p>Each level requires more XP than the last, using a quadratic progression system. Early levels are quick, while higher levels require dedication and grinding.</p>
+                    </div>
+                    <div class="progression-card">
+                        <h4>💎 Stat Points</h4>
+                        <p>Earn 5 stat points every time you level up. At max level (100), you'll have 495 stat points to allocate across all 8 stats, allowing for deep character customization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shops Showcase Section -->
+    <section id="shops" class="shops-section">
+        <div class="container">
+            <h2 class="section-title">NPC Shops & Economy</h2>
+            <p class="section-subtitle">Visit our specialized shops to buy and sell items using Merits</p>
+            
+            <div class="shops-grid">
+                <div class="shop-card">
+                    <div class="shop-image">
+                        <img src="assets/blacksmith.png" alt="Blacksmith Shop" onerror="this.style.display='none'">
+                    </div>
+                    <h3>Blacksmith</h3>
+                    <p>Purchase weapons, tools, and metalwork. Perfect for warriors and craftsmen seeking quality equipment.</p>
+                </div>
+                
+                <div class="shop-card">
+                    <div class="shop-image">
+                        <img src="assets/armor.png" alt="Armorer Shop" onerror="this.style.display='none'">
+                    </div>
+                    <h3>Armorer</h3>
+                    <p>Buy and sell armor pieces. Protect yourself with the finest armor sets available in the realm.</p>
+                </div>
+                
+                <div class="shop-card">
+                    <div class="shop-image">
+                        <img src="assets/Food.png" alt="Chef Shop" onerror="this.style.display='none'">
+                    </div>
+                    <h3>Chef</h3>
+                    <p>Stock up on food and cooking supplies. Keep yourself well-fed during your adventures.</p>
+                </div>
+                
+                <div class="shop-card">
+                    <div class="shop-image">
+                        <img src="assets/Herbalist.png" alt="Herbalist Shop" onerror="this.style.display='none'">
+                    </div>
+                    <h3>Herbalist</h3>
+                    <p>Find potions, herbs, and alchemical ingredients. Enhance your abilities with magical brews.</p>
+                </div>
+                
+                <div class="shop-card">
+                    <div class="shop-image">
+                        <img src="assets/Leather.png" alt="Leatherworker Shop" onerror="this.style.display='none'">
+                    </div>
+                    <h3>Leatherworker</h3>
+                    <p>Acquire leather goods and crafted items. Lightweight gear for agile adventurers.</p>
+                </div>
+                
+                <div class="shop-card">
+                    <div class="shop-image">
+                        <img src="assets/Bank.png" alt="Bank" onerror="this.style.display='none'">
+                    </div>
+                    <h3>Bank</h3>
+                    <p>Store your Merits safely. Manage your finances and secure your wealth for future investments.</p>
+                </div>
+            </div>
+            
+            <div class="additional-shops">
+                <h3>Additional Shops Available</h3>
+                <p>Visit these specialized shops in-game for even more items:</p>
+                <div class="shop-list">
+                    <span class="shop-tag">Weaponsmith</span>
+                    <span class="shop-tag">Farming</span>
+                    <span class="shop-tag">Furniture</span>
+                    <span class="shop-tag">Woodworker</span>
+                    <span class="shop-tag">General Store</span>
+                </div>
+            </div>
+            
+            <div class="economy-info">
+                <div class="economy-card">
+                    <h3>💎 Merits Currency</h3>
+                    <p>The HyTables uses <strong>Merits</strong> as the primary currency. Earn Merits through:</p>
+                    <ul>
+                        <li>Completing jobs and quests</li>
+                        <li>Selling items to NPC shops</li>
+                        <li>Participating in auctions</li>
+                        <li>Trading with other players</li>
+                    </ul>
+                </div>
+                <div class="economy-card">
+                    <h3>🛒 Shop System</h3>
+                    <p>Our comprehensive shop system includes:</p>
+                    <ul>
+                        <li>10+ specialized NPC shops</li>
+                        <li>Buy and sell functionality</li>
+                        <li>Competitive pricing</li>
+                        <li>Wide variety of items</li>
+                    </ul>
+                </div>
+                <div class="economy-card">
+                    <h3>📊 Auction House</h3>
+                    <p>Participate in player-to-player trading:</p>
+                    <ul>
+                        <li>List items for auction</li>
+                        <li>Bid on rare items</li>
+                        <li>Rank-based auction limits</li>
+                        <li>Secure trading system</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commands Section -->
+    <section id="commands" class="commands-section">
+        <div class="container">
+            <h2 class="section-title">Server Commands</h2>
+            <p class="section-subtitle">Essential commands to get you started</p>
+            
+            <div class="commands-grid">
+                <div class="command-category">
+                    <h3>Essentials</h3>
+                    <div class="command-list">
+                        <div class="command-item">
+                            <code>/spawn</code>
+                            <span>Teleport to spawn</span>
+                        </div>
+                        <div class="command-item">
+                            <code>/home</code>
+                            <span>Teleport to your home</span>
+                        </div>
+                        <div class="command-item">
+                            <code>/sethome &lt;name&gt;</code>
+                            <span>Set a home location</span>
+                        </div>
+                        <div class="command-item">
+                            <code>/delhome &lt;name&gt;</code>
+                            <span>Delete a home</span>
+                        </div>
+                        <div class="command-item">
+                            <code>/warp &lt;name&gt;</code>
+                            <span>Teleport to a warp</span>
+                        </div>
+                        <div class="command-item">
+                            <code>/tpa &lt;player&gt;</code>
+                            <span>Request teleport to player</span>
+                        </div>
+                        <div class="command-item">
+                            <code>/tpahere &lt;player&gt;</code>
+                            <span>Request player to teleport to you</span>
+                        </div>
+                        <div class="command-item">
+                            <code>/repair</code>
+                            <span>Repair your items (12hr cooldown)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="command-category">
+                    <h3>Economy</h3>
+                    <div class="command-list">
+                        <div class="command-item">
+                            <code>/balance</code>
+                            <span>Check your Merits balance</span>
+                        </div>
+                        <div class="command-item">
+                            <code>/pay &lt;player&gt; &lt;amount&gt;</code>
+                            <span>Pay another player</span>
+                        </div>
+                        <div class="command-item">
+                            <code>/shop</code>
+                            <span>Open the shop menu</span>
+                        </div>
+                        <div class="command-item">
+                            <code>/auction</code>
+                            <span>Access auction house</span>
+                        </div>
+                        <div class="command-item">
+                            <code>/job</code>
+                            <span>View available jobs</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="command-category">
+                    <h3>Kits & Items</h3>
+                    <div class="command-list">
+                        <div class="command-item">
+                            <code>/kit &lt;name&gt;</code>
+                            <span>Claim a kit (rank-based)</span>
+                        </div>
+                        <div class="command-item">
+                            <code>/crates</code>
+                            <span>Open crate menu</span>
+                        </div>
+                        <div class="command-item">
+                            <code>/rtp</code>
+                            <span>Random teleport</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="command-category">
+                    <h3>Social</h3>
+                    <div class="command-list">
+                        <div class="command-item">
+                            <code>/msg &lt;player&gt; &lt;message&gt;</code>
+                            <span>Send private message</span>
+                        </div>
+                        <div class="command-item">
+                            <code>/shout &lt;message&gt;</code>
+                            <span>Broadcast message to all players</span>
+                        </div>
+                        <div class="command-item">
+                            <code>/afk</code>
+                            <span>Toggle AFK status</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="command-category">
+                    <h3>RPG System</h3>
+                    <div class="command-list">
+                        <div class="command-item">
+                            <code>/lvl gui</code>
+                            <span>Open stats management GUI</span>
+                        </div>
+                        <div class="command-item">
+                            <code>/lvl info</code>
+                            <span>View RPG system information</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="join-section">
+        <div class="container">
+            <div class="join-content">
+                <h2 class="section-title">Join The HyTables</h2>
+                <p class="section-subtitle">Start your adventure today!</p>
+                
+                <div class="join-info">
+                    <div class="join-card">
+                        <div class="join-icon">🎮</div>
+                        <h3>Server Address</h3>
+                        <p class="server-address">play.hytable.online:15880</p>
+                        <button class="btn btn-copy" data-copy="play.hytable.online:15880">Copy Address</button>
+                    </div>
+                    
+                    <div class="join-card">
+                        <div class="join-icon">💬</div>
+                        <h3>Join Discord</h3>
+                        <p>Connect with the community</p>
+                        <a href="https://discord.hytable.online" target="_blank" class="btn btn-discord">Join Discord</a>
+                    </div>
+                    
+                    <div class="join-card">
+                        <div class="join-icon">🛒</div>
+                        <h3>Visit Store</h3>
+                        <p>Support the server</p>
+                        <a href="https://store.hytable.online" target="_blank" class="btn btn-store">Visit Store</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>The HyTables</h3>
+                    <p>Knights of the HyTables</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Server</h4>
+                        <ul>
+                            <li><a href="#ranks">Ranks</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#rpg">RPG System</a></li>
+                            <li><a href="#shops">Shops</a></li>
+                            <li><a href="#commands">Commands</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://discord.hytable.online" target="_blank">Discord</a></li>
+                            <li><a href="https://store.hytable.online" target="_blank">Store</a></li>
+                            <li><a href="#join">Join Server</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The HyTables. All rights reserved.</p>
+                <p>play.hytable.online:15880</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
