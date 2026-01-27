@@ -1,19 +1,38 @@
 // Mobile Menu Toggle
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
 const navLinks = document.querySelector('.nav-links');
+const navOverlay = document.querySelector('.nav-overlay');
 
-if (mobileMenuToggle) {
+function closeMobileMenu() {
+    if (navLinks) navLinks.classList.remove('active');
+    document.body.classList.remove('menu-open');
+    document.documentElement.classList.remove('menu-open');
+    if (mobileMenuToggle) mobileMenuToggle.classList.remove('active');
+}
+
+if (mobileMenuToggle && navLinks) {
     mobileMenuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+        document.documentElement.classList.toggle('menu-open');
+        mobileMenuToggle.classList.toggle('active');
     });
 }
 
-// Close mobile menu when clicking on a link
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-    });
+if (navOverlay) {
+    navOverlay.addEventListener('click', closeMobileMenu);
+}
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) closeMobileMenu();
 });
+
+// Close mobile menu when clicking on a link
+if (navLinks) {
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
+    });
+}
 
 // Copy Server Address Functionality
 const copyButtons = document.querySelectorAll('.btn-copy');
