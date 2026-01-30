@@ -1189,6 +1189,9 @@ section {
 @media (max-width: 768px) {
     .navbar {
         padding: 0.5rem 0;
+        /* Remove backdrop-filter so fixed menu is positioned relative to viewport, not navbar */
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
     }
 
     .navbar .container {
@@ -1219,7 +1222,7 @@ section {
         display: block;
     }
 
-
+    /* Mobile menu panel: fixed to viewport, above overlay and navbar */
     .nav-links {
         position: fixed;
         top: 0;
@@ -1242,12 +1245,14 @@ section {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         transform: translateX(100%);
         pointer-events: none;
-        z-index: 1000;
+        visibility: hidden;
+        z-index: 10002;
     }
 
     .nav-links.active {
         transform: translateX(0);
         pointer-events: auto;
+        visibility: visible;
     }
 
     .nav-links li {
@@ -1276,9 +1281,12 @@ section {
     .nav-overlay {
         display: block;
         position: fixed;
-        inset: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         background: rgba(0, 0, 0, 0.5);
-        z-index: 999;
+        z-index: 10001;
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s ease;
@@ -1292,10 +1300,7 @@ section {
     .mobile-menu-toggle {
         display: flex;
         flex-shrink: 0;
-    }
-
-    .navbar {
-        overflow: hidden;
+        z-index: 10003;
     }
 
     .hero-title {
