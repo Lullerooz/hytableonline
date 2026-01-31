@@ -123,7 +123,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe all cards and sections
-document.querySelectorAll('.rank-card, .feature-card, .info-card, .command-category, .join-card').forEach(el => {
+document.querySelectorAll('.rank-card, .feature-card, .info-card, .command-category, .join-card, .rpg-card, .stat-card, .rpg-command-card, .progression-card, .skills-category-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';

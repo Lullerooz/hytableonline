@@ -525,6 +525,25 @@ section {
     background: var(--bg-tertiary);
 }
 
+.feature-card-media {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.feature-card-gif {
+    max-width: 100%;
+    width: 280px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    display: block;
+    margin: 0 auto;
+}
+
+.feature-card-elitemobs .feature-card-media {
+    margin-bottom: 1rem;
+}
+
 .feature-icon {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
@@ -649,6 +668,44 @@ section {
     background: var(--bg-primary);
 }
 
+.rpg-showcase {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+}
+
+.rpg-showcase-gif {
+    max-width: 100%;
+    width: 560px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.rpg-showcase-caption {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.rpg-card-media {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.rpg-card-img {
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
 .rpg-overview {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -714,7 +771,77 @@ section {
     font-size: 2rem;
     color: var(--primary-color);
     text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.stats-intro {
+    text-align: center;
+    color: var(--text-secondary);
     margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rpg-skills-categories {
+    margin-top: 3rem;
+}
+
+.skills-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.skills-category-card {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.skills-category-card:hover {
+    border-color: var(--primary-color);
+    background: var(--bg-tertiary);
+}
+
+.skills-category-card h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.skills-category-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.rpg-plugins-ref {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.rpg-plugins-ref p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.rpg-plugins-ref a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.rpg-plugins-ref a:hover {
+    text-decoration: underline;
 }
 
 .stats-container {
@@ -1334,6 +1461,16 @@ section {
 
     .mods-grid {
         grid-template-columns: 1fr;
+    }
+
+    .rpg-showcase-gif {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .feature-card-gif {
+        width: 100%;
+        max-width: 240px;
     }
 }
 

@@ -82,7 +82,7 @@
                 <div class="info-card">
                     <div class="info-icon">⚔️</div>
                     <h3>RPG Progression</h3>
-                    <p>Level up through combat, allocate stat points, and customize your character with 8 different attributes.</p>
+                    <p>Level up 23 skills across Gathering, Combat, and Crafting. Unlock skill tree rewards, compete on leaderboards, and become a master of Hytale!</p>
                 </div>
             </div>
         </div>
@@ -141,14 +141,17 @@
                     <p>Safe spawn area with 500 block radius protection and invulnerability. Build and trade in complete safety.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">⚔️</div>
-                    <h3>RPG Leveling System</h3>
-                    <p>Gain experience from defeating mobs, level up to 100, and allocate stat points to customize your character. Build your perfect playstyle!</p>
+                    <div class="feature-icon">🌳</div>
+                    <h3>MMO Skill Tree</h3>
+                    <p>Level up 23 skills—Mining, Woodcutting, Combat weapons, Crafting, and more. Every block you mine, tree you chop, and enemy you defeat brings you closer to mastery. Unlock skill tree rewards at milestones and compete on leaderboards!</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card feature-card-elitemobs">
+                    <div class="feature-card-media">
+                        <img src="assets/eliteleapability-gif.gif" alt="Elite mob leap ability" class="feature-card-gif" onerror="this.parentElement.style.display='none'">
+                    </div>
                     <div class="feature-icon">👹</div>
-                    <h3>Boss Encounters</h3>
-                    <p>Face challenging endgame boss encounters with unique mechanics and rewarding loot drops. Test your skills against powerful bosses designed for experienced players.</p>
+                    <h3>EliteMobs</h3>
+                    <p>Tiered elite mob variants with special abilities, enhanced stats, and better loot. Over 162 NPC types enhanced—higher tiers are deadlier and more rewarding. Combat text overlay and configurable difficulty.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🦖</div>
@@ -167,91 +170,139 @@
     <!-- RPG System Section -->
     <section id="rpg" class="rpg-section">
         <div class="container">
-            <h2 class="section-title">RPG Leveling & Stats System</h2>
-            <p class="section-subtitle">Progress through levels, gain experience, and customize your character with stat allocation</p>
+            <h2 class="section-title">RPG & Leveling System</h2>
+            <p class="section-subtitle">MMO Skill Tree progression and EliteMobs—level 23 skills, unlock rewards, and face tiered elite enemies</p>
+            
+            <div class="rpg-showcase">
+                <img src="assets/eliteleapability-gif.gif" alt="Elite mob leap ability in action" class="rpg-showcase-gif">
+                <p class="rpg-showcase-caption">Elite abilities in action—tiered mobs with leaps, resistances, and more</p>
+            </div>
             
             <div class="rpg-overview">
                 <div class="rpg-card rpg-main">
-                    <div class="rpg-icon">⚔️</div>
-                    <h3>Experience & Leveling</h3>
-                    <p>Gain experience points by defeating mobs! The stronger the mob, the more XP you earn. Progress through levels (up to level 100) and watch your character grow stronger with each level up.</p>
+                    <div class="rpg-card-media">
+                        <img src="assets/staves-mastery-cape-png.png" alt="Staves mastery—the mana class" class="rpg-card-img" onerror="this.style.display='none'">
+                    </div>
+                    <div class="rpg-icon">🌳</div>
+                    <h3>MMO Skill Tree</h3>
+                    <p>A fully customizable RPG skill progression system inspired by mcMMO and RuneScape. Every block you mine, tree you chop, and enemy you defeat brings you closer to mastery. Level up 23 skills across four categories and unlock powerful rewards at milestones.</p>
                     <ul class="rpg-features">
-                        <li>✓ Gain XP from killing mobs based on their health</li>
-                        <li>✓ Level up by accumulating experience points</li>
-                        <li>✓ Earn stat points on each level up</li>
-                        <li>✓ Real-time HUD showing your level and XP progress</li>
+                        <li>✓ 23 skills: Mining, Woodcutting, Excavation, Harvesting, Fishing, Swords, Daggers, Polearms, Staves, Axes, Blunt, Archery, Unarmed, Block, Taming, Acrobatics, Crafting, Repair, Alchemy, Enchanting, Cooking, Smithing, Building</li>
+                        <li>✓ Gain XP from any action—gathering, combat, crafting</li>
+                        <li>✓ Skill tree rewards at levels 5, 10, 15, 20, 30, 40, 50, 65, 80, 100</li>
+                        <li>✓ Leaderboards, XP boosts, and item rewards at milestones</li>
                     </ul>
                 </div>
                 
                 <div class="rpg-card rpg-main">
-                    <div class="rpg-icon">📊</div>
-                    <h3>Stat Allocation</h3>
-                    <p>Customize your character by allocating stat points across 8 different attributes. Build your character to match your playstyle - whether you're a tank, mage, or agile fighter!</p>
+                    <div class="rpg-card-media">
+                        <img src="assets/skeletonmage-png.png" alt="Elite Skeleton Mage" class="rpg-card-img" onerror="this.style.display='none'">
+                    </div>
+                    <div class="rpg-icon">👹</div>
+                    <h3>EliteMobs</h3>
+                    <p>Combat is more dangerous and rewarding with tiered elite mob variants. Over 162 NPC types enhanced with special abilities (leaps, resistances, conditional effects), enhanced stats, and improved loot. Higher-tier elites are significantly deadlier.</p>
                     <ul class="rpg-features">
-                        <li>✓ 8 different stats to choose from</li>
-                        <li>✓ Permanent stat modifiers</li>
-                        <li>✓ Easy-to-use GUI for stat management</li>
-                        <li>✓ 5 stat points per level (495 total at max level)</li>
+                        <li>✓ Tiered mob variants—scaling difficulty and rewards</li>
+                        <li>✓ Special abilities: leaps, resistances, conditional effects</li>
+                        <li>✓ Enhanced combat feedback: red, larger damage numbers; combat text overlay</li>
+                        <li>✓ Configurable loot per mob and tier; runtime config reload</li>
                     </ul>
                 </div>
             </div>
             
             <div class="stats-grid">
-                <h3 class="stats-title">Available Stats</h3>
+                <h3 class="stats-title">Skill Tree Reward Types</h3>
+                <p class="stats-intro">Unlock these rewards at skill milestones—pick from multiple choices per tier. Mana is earned through skill tree choices (Staves = the mana class!).</p>
                 <div class="stats-container">
                     <div class="stat-card">
                         <div class="stat-icon">❤️</div>
-                        <h4>Health</h4>
-                        <p>Increases your maximum health pool</p>
+                        <h4>Max Health</h4>
+                        <p>Permanently increase your health pool</p>
                     </div>
                     <div class="stat-card">
                         <div class="stat-icon">⚡</div>
-                        <h4>Stamina</h4>
-                        <p>Increases your maximum stamina</p>
+                        <h4>Max Stamina</h4>
+                        <p>Permanently increase your stamina pool</p>
                     </div>
                     <div class="stat-card">
                         <div class="stat-icon">🔮</div>
-                        <h4>Mana</h4>
-                        <p>Increases your maximum mana</p>
+                        <h4>Max Mana</h4>
+                        <p>Earn mana through skill trees—Staves and Archery offer the most</p>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-icon">🏹</div>
-                        <h4>Ammo</h4>
-                        <p>Increases your maximum ammo capacity</p>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">💨</div>
-                        <h4>Oxygen</h4>
-                        <p>Increases maximum oxygen for underwater activities</p>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">⏱️</div>
-                        <h4>Stamina Regen</h4>
-                        <p>Reduces stamina regeneration delay</p>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">✨</div>
-                        <h4>Magic Charges</h4>
-                        <p>Increases magic charge capacity</p>
+                        <div class="stat-icon">⚔️</div>
+                        <h4>Damage</h4>
+                        <p>Deal more damage with attacks</p>
                     </div>
                     <div class="stat-card">
                         <div class="stat-icon">🛡️</div>
-                        <h4>Immunity</h4>
-                        <p>Increases immunity duration</p>
+                        <h4>Block</h4>
+                        <p>Take less damage from hits</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">✨</div>
+                        <h4>Critical Chance</h4>
+                        <p>Chance for 50% bonus damage</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💚</div>
+                        <h4>Lifesteal</h4>
+                        <p>Heal when you deal damage</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🍀</div>
+                        <h4>Luck</h4>
+                        <p>Chance for bonus resources when gathering</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🪂</div>
+                        <h4>Fall Reduction</h4>
+                        <p>Take less damage from falls (Acrobatics up to 60%!)</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">📈</div>
+                        <h4>Bonus XP</h4>
+                        <p>Gain more XP from actions</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rpg-skills-categories">
+                <h3 class="rpg-progression-title">23 Skills by Category</h3>
+                <div class="skills-categories-grid">
+                    <div class="skills-category-card">
+                        <h4>⛏️ Gathering</h4>
+                        <p>Mining, Woodcutting, Excavation, Harvesting, Fishing</p>
+                    </div>
+                    <div class="skills-category-card">
+                        <h4>⚔️ Combat</h4>
+                        <p>Swords, Daggers, Polearms, Staves, Axes, Blunt, Archery, Unarmed, Block, Taming, Acrobatics</p>
+                    </div>
+                    <div class="skills-category-card">
+                        <h4>🔧 Crafting & Misc</h4>
+                        <p>Crafting, Repair, Alchemy, Enchanting, Cooking, Smithing, Building</p>
                     </div>
                 </div>
             </div>
             
             <div class="rpg-commands">
-                <h3 class="rpg-commands-title">RPG Commands</h3>
+                <h3 class="rpg-commands-title">RPG & Skill Commands</h3>
                 <div class="rpg-commands-grid">
                     <div class="rpg-command-card">
-                        <code>/lvl gui</code>
-                        <p>Opens the stats management GUI where you can view your level, experience, and allocate stat points to customize your character.</p>
+                        <code>/xp</code> or <code>/mmoxp</code>
+                        <p>Open the skill overview UI—view all skills, levels, progress bars, skill trees, leaderboards, boosts, and rewards.</p>
                     </div>
                     <div class="rpg-command-card">
-                        <code>/lvl info</code>
-                        <p>Displays comprehensive information about all available stats, stat point values, and available commands.</p>
+                        <code>/xpdisplay &lt;number&gt;</code>
+                        <p>Quick notification settings for XP gain display (minimum threshold).</p>
+                    </div>
+                    <div class="rpg-command-card">
+                        <code>/mmoadmin</code>
+                        <p>Open admin configuration UI (admin only)—edit rewards, config, and boosts.</p>
+                    </div>
+                    <div class="rpg-command-card">
+                        <code>/setmmoxp &lt;skill|all&gt; &lt;value&gt;</code>
+                        <p>Set XP for yourself or (with permission) another player. Use <code>--target=player</code> for others.</p>
                     </div>
                 </div>
             </div>
@@ -261,17 +312,21 @@
                 <div class="progression-info">
                     <div class="progression-card">
                         <h4>📈 Experience Gain</h4>
-                        <p>XP is calculated based on mob health. Stronger mobs give more experience, encouraging you to take on greater challenges as you level up.</p>
+                        <p>Gain XP from any action—mining ores, chopping trees, defeating enemies (including EliteMobs), crafting, fishing, and more. Hybrid OSRS-style leveling: meaningful early progression, exponential endgame (~10M XP at level 100).</p>
                     </div>
                     <div class="progression-card">
-                        <h4>🎯 Level Requirements</h4>
-                        <p>Each level requires more XP than the last, using a quadratic progression system. Early levels are quick, while higher levels require dedication and grinding.</p>
+                        <h4>🎯 Skill Tree Milestones</h4>
+                        <p>At levels 5, 10, 15, 20, 30, 40, 50, 65, 80, and 100 you unlock reward choices. Early tiers: pick 1 of 2–3. Mid tiers: pick 1–2 of 3–4. Elite (50–65): pick 2 of 5. Master (80–100): pick 3 of 5–6.</p>
                     </div>
                     <div class="progression-card">
-                        <h4>💎 Stat Points</h4>
-                        <p>Earn 5 stat points every time you level up. At max level (100), you'll have 495 stat points to allocate across all 8 stats, allowing for deep character customization.</p>
+                        <h4>👹 EliteMobs & Loot</h4>
+                        <p>Elite mobs scale by tier with better equipment and loot. Mobs have a chance to drop equipped items; tier-based loot is fully configurable. Perfect Parries mod is recommended for skill-based combat alongside elites.</p>
                     </div>
                 </div>
+            </div>
+            
+            <div class="rpg-plugins-ref">
+                <p>Powered by <a href="https://www.curseforge.com/hytale/mods/mmo-skill-tree" target="_blank" rel="noopener">MMO Skill Tree</a> and <a href="https://www.curseforge.com/hytale/mods/elitemobs" target="_blank" rel="noopener">EliteMobs</a>.</p>
             </div>
         </div>
     </section>
@@ -487,15 +542,23 @@
                 </div>
                 
                 <div class="command-category">
-                    <h3>RPG System</h3>
+                    <h3>RPG & Skills (MMO Skill Tree)</h3>
                     <div class="command-list">
                         <div class="command-item">
-                            <code>/lvl gui</code>
-                            <span>Open stats management GUI</span>
+                            <code>/xp</code> or <code>/mmoxp</code>
+                            <span>Open skill overview (skills, trees, leaderboards, boosts)</span>
                         </div>
                         <div class="command-item">
-                            <code>/lvl info</code>
-                            <span>View RPG system information</span>
+                            <code>/xpdisplay &lt;number&gt;</code>
+                            <span>XP notification threshold</span>
+                        </div>
+                        <div class="command-item">
+                            <code>/mmoadmin</code>
+                            <span>Admin config UI (admin only)</span>
+                        </div>
+                        <div class="command-item">
+                            <code>/setmmoxp &lt;skill|all&gt; &lt;value&gt;</code>
+                            <span>Set XP (use --target=player for others)</span>
                         </div>
                     </div>
                 </div>
