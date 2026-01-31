@@ -540,7 +540,7 @@ section {
     margin: 0 auto;
 }
 
-.feature-card-elitemobs .feature-card-media {
+.feature-card-elites .feature-card-media {
     margin-bottom: 1rem;
 }
 
@@ -819,29 +819,6 @@ section {
     color: var(--text-secondary);
     font-size: 0.9rem;
     margin: 0;
-}
-
-.rpg-plugins-ref {
-    text-align: center;
-    margin-top: 3rem;
-    padding: 1.5rem;
-    background: var(--bg-card);
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
-}
-
-.rpg-plugins-ref p {
-    margin: 0;
-    color: var(--text-secondary);
-}
-
-.rpg-plugins-ref a {
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-
-.rpg-plugins-ref a:hover {
-    text-decoration: underline;
 }
 
 .stats-container {

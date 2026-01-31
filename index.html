@@ -142,16 +142,16 @@
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🌳</div>
-                    <h3>MMO Skill Tree</h3>
+                    <h3>Skill Tree</h3>
                     <p>Level up 23 skills—Mining, Woodcutting, Combat weapons, Crafting, and more. Every block you mine, tree you chop, and enemy you defeat brings you closer to mastery. Unlock skill tree rewards at milestones and compete on leaderboards!</p>
                 </div>
-                <div class="feature-card feature-card-elitemobs">
+                <div class="feature-card feature-card-elites">
                     <div class="feature-card-media">
-                        <img src="assets/eliteleapability-gif.gif" alt="Elite mob leap ability" class="feature-card-gif" onerror="this.parentElement.style.display='none'">
+                        <img src="assets/eliteleapability-gif.gif" alt="Elite enemy leap ability" class="feature-card-gif" onerror="this.parentElement.style.display='none'">
                     </div>
                     <div class="feature-icon">👹</div>
-                    <h3>EliteMobs</h3>
-                    <p>Tiered elite mob variants with special abilities, enhanced stats, and better loot. Over 162 NPC types enhanced—higher tiers are deadlier and more rewarding. Combat text overlay and configurable difficulty.</p>
+                    <h3>Elite Enemies</h3>
+                    <p>Tiered elite mob variants with special abilities, enhanced stats, and better loot. Higher tiers are deadlier and more rewarding. Combat text overlay for clearer feedback.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🦖</div>
@@ -171,11 +171,11 @@
     <section id="rpg" class="rpg-section">
         <div class="container">
             <h2 class="section-title">RPG & Leveling System</h2>
-            <p class="section-subtitle">MMO Skill Tree progression and EliteMobs—level 23 skills, unlock rewards, and face tiered elite enemies</p>
+            <p class="section-subtitle">Skill Tree progression and elite enemies—level 23 skills, unlock rewards, and face tiered elites</p>
             
             <div class="rpg-showcase">
-                <img src="assets/eliteleapability-gif.gif" alt="Elite mob leap ability in action" class="rpg-showcase-gif">
-                <p class="rpg-showcase-caption">Elite abilities in action—tiered mobs with leaps, resistances, and more</p>
+                <img src="assets/eliteleapability-gif.gif" alt="Elite enemy leap ability in action" class="rpg-showcase-gif">
+                <p class="rpg-showcase-caption">Elite abilities in action—tiered enemies with leaps, resistances, and more</p>
             </div>
             
             <div class="rpg-overview">
@@ -184,8 +184,8 @@
                         <img src="assets/staves-mastery-cape-png.png" alt="Staves mastery—the mana class" class="rpg-card-img" onerror="this.style.display='none'">
                     </div>
                     <div class="rpg-icon">🌳</div>
-                    <h3>MMO Skill Tree</h3>
-                    <p>A fully customizable RPG skill progression system inspired by mcMMO and RuneScape. Every block you mine, tree you chop, and enemy you defeat brings you closer to mastery. Level up 23 skills across four categories and unlock powerful rewards at milestones.</p>
+                    <h3>Skill Tree</h3>
+                    <p>Level up 23 skills across Gathering, Combat, and Crafting. Every block you mine, tree you chop, and enemy you defeat brings you closer to mastery. Unlock powerful rewards at skill milestones and compete on leaderboards.</p>
                     <ul class="rpg-features">
                         <li>✓ 23 skills: Mining, Woodcutting, Excavation, Harvesting, Fishing, Swords, Daggers, Polearms, Staves, Axes, Blunt, Archery, Unarmed, Block, Taming, Acrobatics, Crafting, Repair, Alchemy, Enchanting, Cooking, Smithing, Building</li>
                         <li>✓ Gain XP from any action—gathering, combat, crafting</li>
@@ -199,13 +199,13 @@
                         <img src="assets/skeletonmage-png.png" alt="Elite Skeleton Mage" class="rpg-card-img" onerror="this.style.display='none'">
                     </div>
                     <div class="rpg-icon">👹</div>
-                    <h3>EliteMobs</h3>
-                    <p>Combat is more dangerous and rewarding with tiered elite mob variants. Over 162 NPC types enhanced with special abilities (leaps, resistances, conditional effects), enhanced stats, and improved loot. Higher-tier elites are significantly deadlier.</p>
+                    <h3>Elite Enemies</h3>
+                    <p>Combat is more dangerous and rewarding with tiered elite mob variants. Enemies can have special abilities (leaps, resistances, conditional effects), enhanced stats, and improved loot. Higher-tier elites are significantly deadlier.</p>
                     <ul class="rpg-features">
-                        <li>✓ Tiered mob variants—scaling difficulty and rewards</li>
+                        <li>✓ Tiered enemy variants—scaling difficulty and rewards</li>
                         <li>✓ Special abilities: leaps, resistances, conditional effects</li>
                         <li>✓ Enhanced combat feedback: red, larger damage numbers; combat text overlay</li>
-                        <li>✓ Configurable loot per mob and tier; runtime config reload</li>
+                        <li>✓ Better loot per tier—mobs can drop equipped gear</li>
                     </ul>
                 </div>
             </div>
@@ -286,23 +286,15 @@
             </div>
             
             <div class="rpg-commands">
-                <h3 class="rpg-commands-title">RPG & Skill Commands</h3>
+                <h3 class="rpg-commands-title">Skill Commands</h3>
                 <div class="rpg-commands-grid">
                     <div class="rpg-command-card">
-                        <code>/xp</code> or <code>/mmoxp</code>
-                        <p>Open the skill overview UI—view all skills, levels, progress bars, skill trees, leaderboards, boosts, and rewards.</p>
+                        <code>/xp</code>
+                        <p>Open the skill overview—view all skills, levels, progress bars, skill trees, leaderboards, boosts, and rewards.</p>
                     </div>
                     <div class="rpg-command-card">
                         <code>/xpdisplay &lt;number&gt;</code>
-                        <p>Quick notification settings for XP gain display (minimum threshold).</p>
-                    </div>
-                    <div class="rpg-command-card">
-                        <code>/mmoadmin</code>
-                        <p>Open admin configuration UI (admin only)—edit rewards, config, and boosts.</p>
-                    </div>
-                    <div class="rpg-command-card">
-                        <code>/setmmoxp &lt;skill|all&gt; &lt;value&gt;</code>
-                        <p>Set XP for yourself or (with permission) another player. Use <code>--target=player</code> for others.</p>
+                        <p>Set how often you see XP gain notifications (minimum threshold).</p>
                     </div>
                 </div>
             </div>
@@ -312,22 +304,19 @@
                 <div class="progression-info">
                     <div class="progression-card">
                         <h4>📈 Experience Gain</h4>
-                        <p>Gain XP from any action—mining ores, chopping trees, defeating enemies (including EliteMobs), crafting, fishing, and more. Hybrid OSRS-style leveling: meaningful early progression, exponential endgame (~10M XP at level 100).</p>
+                        <p>Gain XP from any action—mining ores, chopping trees, defeating enemies (including elite variants), crafting, fishing, and more. Meaningful early progression with exponential endgame (~10M XP at level 100).</p>
                     </div>
                     <div class="progression-card">
                         <h4>🎯 Skill Tree Milestones</h4>
                         <p>At levels 5, 10, 15, 20, 30, 40, 50, 65, 80, and 100 you unlock reward choices. Early tiers: pick 1 of 2–3. Mid tiers: pick 1–2 of 3–4. Elite (50–65): pick 2 of 5. Master (80–100): pick 3 of 5–6.</p>
                     </div>
                     <div class="progression-card">
-                        <h4>👹 EliteMobs & Loot</h4>
-                        <p>Elite mobs scale by tier with better equipment and loot. Mobs have a chance to drop equipped items; tier-based loot is fully configurable. Perfect Parries mod is recommended for skill-based combat alongside elites.</p>
+                        <h4>👹 Elite Enemies & Loot</h4>
+                        <p>Elite enemies scale by tier with better equipment and loot. They have a chance to drop equipped items. Higher tiers mean deadlier fights and better rewards.</p>
                     </div>
                 </div>
             </div>
             
-            <div class="rpg-plugins-ref">
-                <p>Powered by <a href="https://www.curseforge.com/hytale/mods/mmo-skill-tree" target="_blank" rel="noopener">MMO Skill Tree</a> and <a href="https://www.curseforge.com/hytale/mods/elitemobs" target="_blank" rel="noopener">EliteMobs</a>.</p>
-            </div>
         </div>
     </section>
 
@@ -542,23 +531,15 @@
                 </div>
                 
                 <div class="command-category">
-                    <h3>RPG & Skills (MMO Skill Tree)</h3>
+                    <h3>Skills</h3>
                     <div class="command-list">
                         <div class="command-item">
-                            <code>/xp</code> or <code>/mmoxp</code>
-                            <span>Open skill overview (skills, trees, leaderboards, boosts)</span>
+                            <code>/xp</code>
+                            <span>Open skill overview (skills, trees, leaderboards, rewards)</span>
                         </div>
                         <div class="command-item">
                             <code>/xpdisplay &lt;number&gt;</code>
                             <span>XP notification threshold</span>
-                        </div>
-                        <div class="command-item">
-                            <code>/mmoadmin</code>
-                            <span>Admin config UI (admin only)</span>
-                        </div>
-                        <div class="command-item">
-                            <code>/setmmoxp &lt;skill|all&gt; &lt;value&gt;</code>
-                            <span>Set XP (use --target=player for others)</span>
                         </div>
                     </div>
                 </div>
